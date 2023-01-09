@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body
+    style="background-image: url('../images/brain\ 1.png')"
+    class="bg-cover bg-center bg-no-repeat w-full h-screen overflow-hidden"
+  >
+    <div
+      class="w-[1100px] mx-auto mt-6 h-[600px] bg-[rgba(0,0,0,.4)] rounded-xl py-5 px-[60px]"
+    >
+      <h1
+        class="text-5xl text-white flex items-center justify-center my-4 font-bold"
+      >
+        Word Game
+      </h1>
+      <div class="flex items-center justify-around">
+        <div
+          class="time w-[70px] h-[70px] rounded-full text-white flex items-center justify-center bg-gray-500 font-semibold"
+        >
+          Time
+        </div>
+        <div
+          class="score w-[100px] h-[60px] rounded-[50%] text-white flex items-center justify-center bg-gray-500 font-semibold ml-[60px]"
+        >
+          Score : 10
+        </div>
+        <button 
+          class="start w-[150px] h-[35px] text-black flex items-center justify-center bg-white font-semibold text-sm"
+        >
+          Start
+        </button>
+      </div>
+      <div class="my-[40px] flex justify-between">
+        <div class="bg-[rgba(0,0,0,.8)] p-3 text-white w-[250px]">
+          <h3 class="text-center text-lg font-extrabold">How To Play</h3>
+          <ul class="leading-7 text-center">
+            <li
+              class="relative before:content-[''] before:absolute before:w-[10px] before:h-[10px] before:block before:border-solid before:border-[2px] before:border-[white] before:rounded-[50%] before:-left-[22px] before:top-[40%]"
+            >
+              Click the start button to begin
+            </li>
+            <li
+              class="relative before:content-[''] before:absolute before:w-[10px] before:h-[10px] before:block before:border-solid before:border-[2px] before:border-[white] before:rounded-[50%] before:-left-[22px] before:top-[40%]"
+            >
+              Find as manu words as you can
+            </li>
+            <li
+              class="relative before:content-[''] before:absolute before:w-[10px] before:h-[10px] before:block before:border-solid before:border-[2px] before:border-[white] before:rounded-[50%] before:-left-[22px] before:top-[20%]"
+            >
+              You have only 30 seconds for each word.
+            </li>
+            <li
+              class="relative before:content-[''] before:absolute before:w-[10px] before:h-[10px] before:block before:border-solid before:border-[2px] before:border-[white] before:rounded-[50%] before:-left-[22px] before:top-[20%]"
+            >
+              If you want to cahnge the word, click the "Next Word" button
+            </li>
+          </ul>
+        </div>
+        <div class="w-[330px] mr-[80px]">
+          <div class="word_input flex items-center justify-around gap-2 mb-2">
+            <div class="w-full h-[30px] bg-gray-400 mb-2 rounded-md"></div>
+          </div>
+          <div
+            class="words w-full grid grid-cols-5 text-center justify-center gap-1"
+          >
+            <div class="bg-[#0EFFF2]">a</div>
+            <div class="bg-[#0EFFF2]">b</div>
+            <div class="bg-[#0EFFF2]">c</div>
+            <div class="bg-[#0EFFF2]">d</div>
+            <div class="bg-[#0EFFF2]">e</div>
+            <div class="bg-[#0EFFF2]">f</div>
+            <div class="bg-[#0EFFF2]">g</div>
+            <div class="bg-[#0EFFF2]">h</div>
+            <div class="bg-[#0EFFF2]">i</div>
+            <div class="bg-[#0EFFF2]">j</div>
+            <div class="bg-[#0EFFF2]">k</div>
+            <div class="bg-[#0EFFF2]">l</div>
+            <div class="bg-[#0EFFF2]">m</div>
+            <div class="bg-[#0EFFF2]">n</div>
+            <div class="bg-[#0EFFF2]">o</div>
+            <div class="bg-[#0EFFF2]">p</div>
+            <div class="bg-[#0EFFF2]">q</div>
+            <div class="bg-[#0EFFF2]">r</div>
+            <div class="bg-[#0EFFF2]">s</div>
+            <div class="bg-[#0EFFF2]">t</div>
+            <div class="bg-[#0EFFF2]">u</div>
+            <div class="bg-[#0EFFF2]">v</div>
+            <div class="bg-[#0EFFF2]">w</div>
+            <div class="bg-[#0EFFF2]">x</div>
+            <div class="bg-[#0EFFF2]">y</div>
+            <div class="bg-[#0EFFF2]">z</div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="next text-sm w-[130px] h-[40px] bg-white leading-[40px] text-center"
+            aria-disabled="index.html"
+          >
+            Next Word
+          </div>
+          <div class="relative">
+            <div
+              class="info text-sm w-[130px] h-[40px] bg-white leading-[40px] text-center mt-3"
+            >
+              Hint...
+            </div>
+            <div class=" hidden info_text absolute top-[53px] w-[220px] bg-[rgba(0,0,0,0.5)] text-white -left-9 p-3 before:content-[''] before:w-[15px] before:h-[15px] before:bg-[rgba(0,0,0,0.5)] before:absolute before:left-[43%] before:-top-[8px] before:rotate-[45deg] before:translate-x-[50%] ">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

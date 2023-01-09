@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    .words div{
+        height: 40px;
+        line-height: 40px;
+        
+        color:white;
+        border-radius: 10px;
+    }
+}
